@@ -1,0 +1,201 @@
+<html>
+<head>
+
+
+    <title>Multi-Factor Authentication</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(../../Pictures/Background_Pic.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 10%;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            backdrop-filter: blur(10px);
+            background-color: #00000088;
+        }
+        header img {
+            position: fixed;
+            top: 5;
+            margin-left: 10%;
+            border-radius: 25px;
+            max-height: 75px;
+        }
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            color: #59BFFF;
+            margin-left: 20%;
+            font-size: 4ch;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+            width: 20%;
+            margin-right: 15%;
+        }
+       	.highlight {
+            color: #000000a2;
+            background-color: #59bfffcb;
+        }
+        nav a {
+            padding: 3px 50px;
+            display: block;
+            text-align: center;
+            color: #59BFFF;
+            border: .5px solid #59bfff41;
+            box-shadow: 7px 6px 10px rgba(255, 255, 255, 0.128);
+            border-radius: 50px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #000000;
+            background-color: #59bfff;
+            transition: background-color 2.5s ease;
+            text-decoration: none;
+        }
+        .fas {
+            font-size: 1.25rem;
+            padding: auto;
+        }
+        .fas:before {
+            transition: all 1s ease;
+        }
+        .back-button {
+            color: #59BFFF;
+            background-color: #00000088;
+            border: 2.5px solid #59bfff41;
+            box-shadow: 7px 6px 10px rgba(255, 255, 255, 0.128);
+            border-radius: 50px;
+            transition: background-color 2.5s ease;
+            padding: 12.5px 50px;
+            position: absolute;
+        }
+        .back-button:hover {
+            color: #000000;
+            background-color: #59bfff;
+        }
+        .tile {
+            margin-top: 150px;
+            margin-bottom: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 80px;
+            width: 60%;
+            background-color: #00000088;
+            border-radius: 100px;
+            text-align: left;
+            border: 3px solid #ffffff37;
+            box-shadow: 20px 15px 30px #00000088;
+            backdrop-filter: blur(15px);
+            transition: transform 0.2;
+            display: flex;
+        }
+        .tile:hover {
+            transform:scale(1.05);
+            transition: 2s;
+            border: 1px solid #00FF7F;
+        }
+        .tile img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50px;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ol{
+            color : #ffffff ;
+            font-size: 2.5ch;
+            letter-spacing: 2.5px;
+        }
+        h2{
+            color: #59BFFF;
+            font-size: 6ch;
+            text-align: center;
+        }
+        iframe{
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+   </style>
+
+</head>
+
+
+<body>
+    <header>
+
+        <button class="back-button" onclick="goBack()"><i class="fas fa-arrow-left"></i></button>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+
+
+        <img src="../../Pictures/Multi-Factor_Authentication.png" alt="Multi-Factor_Authentication">
+        <h1>Multi-Factor Authentication</h1>
+        <nav>
+            <a href="../../Home_Page.html"><i class="fas fa-home"></i> Home	</a>
+            <a href="../../Contact/Contact.html"><i class="fas fa-phone"></i> Contact </a>
+            <a href="../../About/About.html"><i class="fas fa-info-circle"></i> About </a>
+        </nav>
+    </header>
+
+
+
+<div class="tile">
+    <main>
+        <h2><b>Multi-Factor_Authentication</b></h2>
+        <ol>
+            <li><b>Definition:</b> An authentication method that requires two or more verification factors to access a resource such as an application, online account, or VPN.</li><br>
+            <li><b>Something You Know:</b> The first factor, which is typically a password or PIN.</li><br>
+            <li><b>Something You Have:</b> The second factor, which can be a smartphone, hardware token, or smart card.</li><br>
+            <li><b>Something You Are:</b> The third factor, which includes biometrics like fingerprints, facial recognition, or retinal scans.</li><br>
+            <li><b>Enhanced Security:</b> Provides a higher level of security compared to single-factor authentication by combining multiple factors.</li><br>
+            <li><b>Authentication Apps:</b> Uses mobile apps like Google Authenticator or Microsoft Authenticator to generate verification codes.</li><br>
+            <li><b>SMS Verification:</b> Sends a verification code via text message to the user's registered mobile number.</li><br>
+            <li><b>Push Notifications:</b> Sends a prompt to the user's mobile device to approve the login attempt.</li><br>
+            <li><b>Biometric Verification:</b> Uses biometric data for authentication, such as fingerprint or face ID.</li><br>
+            <li><b>Risk-Based Authentication:</b> Adjusts the required authentication factors based on the perceived risk of the login attempt.</li><br>            
+        </ol>
+    </main>
+</div>
+
+
+<a href="https://www.techrepublic.com/article/best-multi-factor-authentication-solutions/?form=MG0AV3" target="blank" class="tile">
+    <h2>If you want to get more information...</h2>
+        <img src="../../Pictures/more_information.jpeg" alt="more information">
+    </a>
+
+
+</body>
+
+
+<footer>
+    <iframe src="../../Footer/Footer.html"></iframe>
+</footer>
+
+
+</html>

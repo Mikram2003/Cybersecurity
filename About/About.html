@@ -1,0 +1,174 @@
+<html>
+<head>
+
+
+    <title>Home Page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(../Pictures/Background_Pic.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 10%;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            backdrop-filter: blur(10px);
+            background-color: #00000088;
+        }
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            color: #59BFFF;
+            margin-left: 20%;
+            font-size: 4ch;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+            width: 20%;
+            margin-right: 15%;
+        }
+       	.highlight {
+            color: #000000a2;
+            background-color: #59bfffcb;
+        }
+        nav a {
+            padding: 3px 50px;
+            display: block;
+            text-align: center;
+            color: #59BFFF;
+            border: .5px solid #000000;
+            box-shadow: 7px 6px 10px rgba(255, 255, 255, 0.128);
+            border-radius: 50px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #000000;
+            background-color: #59bfff;
+            transition: background-color 2.5s ease;
+            text-decoration: none;
+        }
+        .fas {
+            font-size: 1.25rem;
+            padding: auto;
+        }
+        .fas:before {
+            transition: all 1s ease;
+        }
+        .back-button {
+            color: #59BFFF;
+            background-color: #00000088;
+            border: 2.5px solid #59bfff41;
+            box-shadow: 7px 6px 10px rgba(255, 255, 255, 0.128);
+            border-radius: 50px;
+            transition: background-color 2.5s ease;
+            padding: 12.5px 50px;
+            position: absolute;
+        }
+        .back-button:hover {
+            color: #000000;
+            background-color: #59bfff;
+        }
+        .tile {
+            padding: 180px;
+            margin-top: 7.5%;
+            width: 60%;
+            height: 10%;
+            background-color: #00000088;
+            align-items: center;
+            border: 2.5px solid #1e8fff3a;
+            box-shadow: 20px 15px 30px #00000088;
+            border-radius: 100px;
+            backdrop-filter: blur(15px);
+            display: flex;
+        }
+        .tile:hover {
+            transform:scale(1.05);
+            transition: 2s;
+            border: 1px solid #00FF7F;
+        }
+        a {
+            text-decoration: none;
+            color: #69b1ff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        div{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h2{
+            color: #59BFFF;
+        }
+        p{
+            color : #ffffff ;
+        }
+        iframe{
+            position: absolute;
+            width: 100%;
+            height: 200px;
+            border: none;
+            bottom: 0;
+        }
+</style>
+
+
+</head>
+
+
+<body>
+    <header>
+
+        <button class="back-button" onclick="goBack()"><i class="fas fa-arrow-left"></i></button>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+
+ 
+        <h1>About</h1>
+         <nav>
+	        <a href="../Home_Page.html"><i class="fas fa-home"></i> Home	  </a>
+            <a href="../Contact/Contact.html"><i class="fas fa-phone"></i> Contact	  </a>
+            <a href="../About/About.html" class="highlight"> <i class="fas fa-info-circle"></i> About </a>
+        </nav>
+    </header>
+
+
+
+<div class="tile">
+    <main>
+        <h2>Our Mission</h2>
+        <p>At Mobile Security, our mission is to provide comprehensive protection for your mobile devices against cyber threats. We aim to educate users on the importance of mobile security and offer practical solutions to safeguard their data.</p>
+        <h2>Our Team</h2>
+        <p>Our team consists of experienced cybersecurity professionals dedicated to staying ahead of the latest threats and trends in mobile security. We are passionate about helping users protect their personal and professional information.</p>
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need support, feel free to reach out to us at <a href="https://mail.google.com/mail/u/0/#inbox">mmmmikram@gmail.com</a>.</p>
+    </main>
+</div>
+
+</body>
+
+
+<footer>
+    <iframe src="../Footer/Footer.html"></iframe>
+</footer>
+
+
+</html>

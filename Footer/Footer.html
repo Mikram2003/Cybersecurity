@@ -1,0 +1,119 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        footer {
+            width: fix;
+            height: 180px;
+            background-color: #00000044;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px 0px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 -25px 50px rgba(255, 255, 255, 0.158);
+            transition: transform 3s ease;
+            bottom: 0;
+        }
+        footer:hover {
+            transform: translateY(-20px);
+            background-color: #00000088;
+        }
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .icon {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 42%;
+            background: linear-gradient(45deg,#000000b3, #004a78, #59bfff, #ffffff74 );
+        }
+        .icon i {
+            color: #000000df;
+            font-size: 2rem;
+            transition: color 2s;
+        }
+        .icon i:hover {
+            color: #ffffffe6;
+        }
+        .icon:hover {
+            text-decoration: none;
+            transform: scale(1.25);
+        }
+        .icon.facebook:hover {
+            background: linear-gradient(45deg, #4267B2, #2D4373);
+        }
+        .icon.instagram:hover {
+            background: linear-gradient(45deg, #F58529, #DD2A7B);
+        }
+        .icon.whatsapp:hover {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        
+        .clock{
+            border: none;
+            text-align: right;
+            margin-top: -129px;
+        }
+        iframe{
+            width: 25%;
+            border: none;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+
+    <main>
+    </main>
+
+
+    <footer>
+        <div class="content">
+            <p>© 2024 Cybersecurity Solutions. All rights reserved.</p>
+            <p>Contact us: <a href="tel:94763525300" style="color: #59BFFF;"><i class="fas fa-phone"></i> 94763525300</a> | 
+                <a href="mailto:mmmmikram@gmail.com" style="color: #C6C6C6;">mmmmikram@gmail.com</a></p>
+            <p>Follow us on social media:</p>
+            <div class="wrapper">
+                <a href="https://www.facebook.com/share/DEhFCwbH7eGB4p9r/?mibextid=qi2Omg" class="icon facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/mhd_mikram_03/?utm_source=qr&r=nametag" class="icon instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/qr/AVA4U3QK2QJDM1" class="icon whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+
+        <div class="clock">
+                <iframe src="digital_clock.html"></iframe>
+        </div>
+
+
+    </footer>
+
+
+
+</body>
+
+
+</html>

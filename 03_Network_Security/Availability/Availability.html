@@ -1,0 +1,201 @@
+<html>
+<head>
+
+
+    <title>Availability</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(../../Pictures/Background_Pic.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 10%;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            backdrop-filter: blur(10px);
+            background-color: #00000088;
+        }
+        header img {
+            position: fixed;
+            top: 5;
+            margin-left: 10%;
+            border-radius: 25px;
+            max-height: 75px;
+        }
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            color: #59BFFF;
+            margin-left: 20%;
+            font-size: 4ch;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+            width: 20%;
+            margin-right: 15%;
+        }
+       	.highlight {
+            color: #000000a2;
+            background-color: #59bfffcb;
+        }
+        nav a {
+            padding: 3px 50px;
+            display: block;
+            text-align: center;
+            color: #59BFFF;
+            border: .5px solid #59bfff41;
+            box-shadow: 7px 6px 10px rgba(255, 255, 255, 0.128);
+            border-radius: 50px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #000000;
+            background-color: #59bfff;
+            transition: background-color 2.5s ease;
+            text-decoration: none;
+        }
+        .fas {
+            font-size: 1.25rem;
+            padding: auto;
+        }
+        .fas:before {
+            transition: all 1s ease;
+        }
+        .back-button {
+            color: #59BFFF;
+            background-color: #00000088;
+            border: 2.5px solid #59bfff41;
+            box-shadow: 7px 6px 10px rgba(255, 255, 255, 0.128);
+            border-radius: 50px;
+            transition: background-color 2.5s ease;
+            padding: 12.5px 50px;
+            position: absolute;
+        }
+        .back-button:hover {
+            color: #000000;
+            background-color: #59bfff;
+        }
+        .tile {
+            margin-top: 150px;
+            margin-bottom: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 80px;
+            width: 60%;
+            background-color: #00000088;
+            border-radius: 100px;
+            text-align: left;
+            border: 3px solid #ffffff37;
+            box-shadow: 20px 15px 30px #00000088;
+            backdrop-filter: blur(15px);
+            transition: transform 0.2;
+            display: flex;
+        }
+        .tile:hover {
+            transform:scale(1.05);
+            transition: 2s;
+            border: 1px solid #00FF7F;
+        }
+        .tile img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50px;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ol{
+            color : #ffffff ;
+            font-size: 2.5ch;
+            letter-spacing: 2.5px;
+        }
+        h2{
+            color: #59BFFF;
+            font-size: 6ch;
+            text-align: center;
+        }
+        iframe{
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+   </style>
+
+</head>
+
+
+<body>
+    <header>
+
+        <button class="back-button" onclick="goBack()"><i class="fas fa-arrow-left"></i></button>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+
+
+        <img src="../../Pictures/Availability.png" alt="Availability">
+        <h1>Availability</h1>
+        <nav>
+            <a href="../../Home_Page.html"><i class="fas fa-home"></i> Home	</a>
+            <a href="../../Contact/Contact.html"><i class="fas fa-phone"></i> Contact </a>
+            <a href="../../About/About.html"><i class="fas fa-info-circle"></i> About </a>
+        </nav>
+    </header>
+
+
+
+<div class="tile">
+    <main>
+        <h2><b>Availability</b></h2>
+        <ol>
+            <li><b>Redundancy:</b>Having multiple systems, networks, or components in place to ensure that if one fails, others can take over without interrupting service.</li><br>
+            <li><b>Fault Tolerance:</b>The ability of a system to continue operating properly in the event of a failure of some of its components.</li><br>
+            <li><b>Load Balancing:</b>Distributing workloads across multiple computing resources to ensure no single resource is overwhelmed and to maintain system availability.</li><br>
+            <li><b>Disaster Recovery:</b>A set of policies and procedures to enable the recovery or continuation of vital technology infrastructure after a natural or human-induced disaster.</li><br>
+            <li><b>High Availability (HA):</b>Systems and components that are continuously operational and have minimal downtime.</li><br>
+            <li><b>Failover:</b>Switching to a redundant or standby system upon the failure or abnormal termination of the currently active system.</li><br>
+            <li><b>Backups:</b>Regular copying of data to an offsite location to ensure it can be restored in case of data loss or corruption.</li><br>
+            <li><b>Scalability:</b>The capability of a system to handle increased load by adding resources, ensuring continued availability as demand grows.</li><br>
+            <li><b>Network Security Monitoring:</b>Continuous monitoring of network traffic to detect and respond to potential threats that could impact availability.</li><br>
+            <li><b>Service Level Agreements (SLAs):</b>Contracts with service providers that define the expected level of service, including availability, and remedies for failure to meet those expectations.</li><br>
+        </ol>
+    </main>
+</div>
+
+
+<a href="https://www.uptimia.com/website-availability-test?form=MG0AV3" target="blank" class="tile">
+    <h2>If you want to get more information...</h2>
+        <img src="../../Pictures/more_information.jpeg" alt="more information">
+    </a>
+
+
+</body>
+
+
+<footer>
+    <iframe src="../../Footer/Footer.html"></iframe>
+</footer>
+
+
+</html>

@@ -1,0 +1,201 @@
+<html>
+<head>
+
+
+    <title>Use Strong Passwords and Biometrics</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(../../Pictures/Background_Pic.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 10%;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            backdrop-filter: blur(10px);
+            background-color: #00000088;
+        }
+        header img {
+            position: fixed;
+            top: 5;
+            margin-left: 10%;
+            border-radius: 25px;
+            max-height: 75px;
+        }
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            color: #59BFFF;
+            margin-left: 20%;
+            font-size: 4ch;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+            width: 20%;
+            margin-right: 15%;
+        }
+       	.highlight {
+            color: #000000a2;
+            background-color: #59bfffcb;
+        }
+        nav a {
+            padding: 3px 50px;
+            display: block;
+            text-align: center;
+            color: #59BFFF;
+            border: .5px solid #59bfff41;
+            box-shadow: 7px 6px 10px rgba(255, 255, 255, 0.128);
+            border-radius: 50px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #000000;
+            background-color: #59bfff;
+            transition: background-color 2.5s ease;
+            text-decoration: none;
+        }
+        .fas {
+            font-size: 1.25rem;
+            padding: auto;
+        }
+        .fas:before {
+            transition: all 1s ease;
+        }
+        .back-button {
+            color: #59BFFF;
+            background-color: #00000088;
+            border: 2.5px solid #59bfff41;
+            box-shadow: 7px 6px 10px rgba(255, 255, 255, 0.128);
+            border-radius: 50px;
+            transition: background-color 2.5s ease;
+            padding: 12.5px 50px;
+            position: absolute;
+        }
+        .back-button:hover {
+            color: #000000;
+            background-color: #59bfff;
+        }
+        .tile {
+            margin-top: 150px;
+            margin-bottom: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 80px;
+            width: 60%;
+            background-color: #00000088;
+            border-radius: 100px;
+            text-align: left;
+            border: 3px solid #ffffff37;
+            box-shadow: 20px 15px 30px #00000088;
+            backdrop-filter: blur(15px);
+            transition: transform 0.2;
+            display: flex;
+        }
+        .tile:hover {
+            transform:scale(1.05);
+            transition: 2s;
+            border: 1px solid #00FF7F;
+        }
+        .tile img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50px;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ol{
+            color : #ffffff ;
+            font-size: 2.5ch;
+            letter-spacing: 2.5px;
+        }
+        h2{
+            color: #59BFFF;
+            font-size: 6ch;
+            text-align: center;
+        }
+        iframe{
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+   </style>
+
+</head>
+
+
+<body>
+    <header>
+
+        <button class="back-button" onclick="goBack()"><i class="fas fa-arrow-left"></i></button>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+
+
+        <img src="../../Pictures/Watch_Out_for_Phishing_Scams.jpg" alt="Watch_Out_for_Phishing_Scams">
+        <h1>Watch Out for Phishing Scams</h1>
+        <nav>
+            <a href="../../Home_Page.html"><i class="fas fa-home"></i> Home	</a>
+            <a href="../../Contact/Contact.html"><i class="fas fa-phone"></i> Contact </a>
+            <a href="../../About/About.html"><i class="fas fa-info-circle"></i> About </a>
+        </nav>
+    </header>
+
+
+
+<div class="tile">
+    <main>
+        <h2><b>Watch Out for Phishing Scams</b></h2>
+        <ol>
+            <li><b>Verify the Sender:</b> Always check the sender’s email address carefully. Phishing emails often come from addresses that look similar to legitimate ones but have slight variations.</li><br>
+            <li><b>Look for Red Flags:</b> Be wary of emails with urgent or threatening language, such as “Your account will be closed!” or “Immediate action required.”</li><br>
+            <li><b>Avoid Clicking Links:</b> Don’t click on links in unsolicited emails or texts. Instead, go directly to the website by typing the URL in your browser.</li><br>
+            <li><b>Check for Grammar Mistakes:</b> Phishing emails often contain spelling and grammatical errors.</li><br>
+            <li><b>Hover Over Links:</b> Hover your mouse over links to see the actual URL before clicking. If it looks suspicious, don’t click.</li><br>
+            <li><b>Don’t Share Personal Info:</b> Legitimate companies will never ask for sensitive information like passwords or Social Security numbers via email.</li><br>
+            <li><b>Use Security Software:</b> Install and update anti-malware and anti-phishing software to help detect and block phishing attempts.</li><br>
+            <li><b>Enable Multi-Factor Authentication:</b> Adding an extra layer of security can help protect your accounts even if your password is compromised.</li><br>
+            <li><b>Educate Yourself:</b> Stay informed about the latest phishing tactics and how to recognize them.</li><br>
+            <li><b>Report Suspicious Emails:</b> If you receive a phishing email, report it to your email provider and the company being impersonated.</li><br>
+        </ol>
+    </main>
+</div>
+
+
+<a href="https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams" target="blank" class="tile">
+    <h2>If you want to get more information...</h2>
+        <img src="../../Pictures/more_information.jpeg" alt="more information">
+    </a>
+
+
+</body>
+
+
+<footer>
+    <iframe src="../../Footer/Footer.html"></iframe>
+</footer>
+
+
+</html>

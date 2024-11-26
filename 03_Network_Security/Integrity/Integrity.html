@@ -1,0 +1,202 @@
+<html>
+<head>
+
+
+    <title>Integrity</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(../../Pictures/Background_Pic.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 10%;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            backdrop-filter: blur(10px);
+            background-color: #00000088;
+        }
+        header img {
+            position: fixed;
+            top: 5;
+            margin-left: 10%;
+            border-radius: 25px;
+            max-height: 75px;
+        }
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            color: #59BFFF;
+            margin-left: 20%;
+            font-size: 4ch;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+            width: 20%;
+            margin-right: 15%;
+        }
+       	.highlight {
+            color: #000000a2;
+            background-color: #59bfffcb;
+        }
+        nav a {
+            padding: 3px 50px;
+            display: block;
+            text-align: center;
+            color: #59BFFF;
+            border: .5px solid #59bfff41;
+            box-shadow: 7px 6px 10px rgba(255, 255, 255, 0.128);
+            border-radius: 50px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #000000;
+            background-color: #59bfff;
+            transition: background-color 2.5s ease;
+            text-decoration: none;
+        }
+        .fas {
+            font-size: 1.25rem;
+            padding: auto;
+        }
+        .fas:before {
+            transition: all 1s ease;
+        }
+        .back-button {
+            color: #59BFFF;
+            background-color: #00000088;
+            border: 2.5px solid #59bfff41;
+            box-shadow: 7px 6px 10px rgba(255, 255, 255, 0.128);
+            border-radius: 50px;
+            transition: background-color 2.5s ease;
+            padding: 12.5px 50px;
+            position: absolute;
+        }
+        .back-button:hover {
+            color: #000000;
+            background-color: #59bfff;
+        }
+        .tile {
+            margin-top: 150px;
+            margin-bottom: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 80px;
+            width: 60%;
+            background-color: #00000088;
+            border-radius: 100px;
+            text-align: left;
+            border: 3px solid #ffffff37;
+            box-shadow: 20px 15px 30px #00000088;
+            backdrop-filter: blur(15px);
+            transition: transform 0.2;
+            display: flex;
+        }
+        .tile:hover {
+            transform:scale(1.05);
+            transition: 2s;
+            border: 1px solid #00FF7F;
+        }
+        .tile img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50px;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ol{
+            color : #ffffff ;
+            font-size: 2.5ch;
+            letter-spacing: 2.5px;
+        }
+        h2{
+            color: #59BFFF;
+            font-size: 6ch;
+            text-align: center;
+        }
+        iframe{
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+   </style>
+
+</head>
+
+
+<body>
+    <header>
+
+        <button class="back-button" onclick="goBack()"><i class="fas fa-arrow-left"></i></button>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+
+
+        <img src="../../Pictures/Integrity.png" alt="Integrity">
+        <h1>Integrity</h1>
+        <nav>
+            <a href="../../Home_Page.html"><i class="fas fa-home"></i> Home	</a>
+            <a href="../../Contact/Contact.html"><i class="fas fa-phone"></i> Contact </a>
+            <a href="../../About/About.html"><i class="fas fa-info-circle"></i> About </a>
+        </nav>
+    </header>
+
+
+
+<div class="tile">
+    <main>
+        <h2><b>Integrity</b></h2>
+        <ol>
+            <li><b>Data Validation:</b> Ensuring that data input is correct and accurate before processing.</li><br>
+            <li><b>Checksums and Hashing:</b> Using mathematical algorithms to verify that data has not been altered.</li><br>
+            <li><b>Digital Signatures:</b> Providing a way to verify the authenticity and integrity of a message, software, or digital document.</li><br>
+            <li><b>Access Control:</b> Restricting access to data based on user roles to prevent unauthorized changes.</li><br>
+            <li><b>Version Control:</b> Tracking changes to files and maintaining a history of modifications to ensure data consistency.</li><br>
+            <li><b>Audit Trails:</b> Keeping detailed logs of who accessed data, what changes were made, and when they occurred.</li><br>
+            <li><b>Encryption:</b> Protecting data integrity during transmission by ensuring it is not altered by unauthorized parties.</li><br>
+            <li><b>Error Detection and Correction:</b> Implementing methods to detect and correct errors in data transmission and storage.</li><br>
+            <li><b>Backup and Recovery:</b> Regularly creating backups of data to restore the original information in case of corruption or loss.</li><br>
+            <li><b>File Permissions:</b> Setting appropriate permissions on files to prevent unauthorized modifications.</li><br>
+
+        </ol>
+    </main>
+</div>
+
+
+<a href="https://integrityinstitute.org/?form=MG0AV3" target="blank" class="tile">
+    <h2>If you want to get more information...</h2>
+        <img src="../../Pictures/more_information.jpeg" alt="more information">
+    </a>
+
+
+</body>
+
+
+<footer>
+    <iframe src="../../Footer/Footer.html"></iframe>
+</footer>
+
+
+</html>
