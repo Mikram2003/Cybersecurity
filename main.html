@@ -1,0 +1,212 @@
+<html>
+<head>
+    
+    <title>Home Page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(Pictures/Background_Pic.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 10%;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            backdrop-filter: blur(10px);
+            background-color: #00000088;
+        }
+        header img {
+            position: fixed;
+            top: 5;
+            margin-left: 10%;
+            border-radius: 25px;
+            max-height: 75px;
+        }
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            color: #59BFFF;
+            margin-left: 20%;
+            font-size: 4ch;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+            width: 20%;
+            margin-right: 15%;
+        }
+       	.highlight {
+            color: #000000a2;
+            background-color: #59bfffcb;
+        }
+        nav a {
+            padding: 3px 50px;
+            display: block;
+            text-align: center;
+            color: #59BFFF;
+            border: .5px solid #000000;
+            box-shadow: 7px 6px 10px rgba(255, 255, 255, 0.128);
+            border-radius: 50px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #000000;
+            background-color: #59bfff;
+            transition: background-color 2.5s ease;
+            text-decoration: none;
+        }
+        .fas {
+            font-size: 1.25rem;
+            padding: auto;
+        }
+        .fas:before {
+            transition: all 1s ease;
+        }
+        .back-button {
+            color: #59BFFF;
+            background-color: #00000088;
+            border: 2.5px solid #59bfff41;
+            box-shadow: 7px 6px 10px rgba(255, 255, 255, 0.128);
+            border-radius: 50px;
+            transition: background-color 2.5s ease;
+            padding: 12.5px 50px;
+            position: absolute;
+        }
+        .back-button:hover {
+            color: #000000;
+            background-color: #59bfff;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 1px;
+            margin-top: 7.5%;
+        }
+        .container:hover > .tile:not(:hover) {
+            filter: blur(2px);
+            opacity: 0.6;
+        }
+        .tile {
+            margin: 30px;
+            padding: 10px;
+            margin-top: 4%;
+            width: 200px;
+            background-color:  #00000010;
+            border-radius: 50px;
+            text-align: center;
+            border: 2.5px solid #1e8fff3a;
+            box-shadow: 10px 7px 20px rgba(0, 0, 0, 0.662);
+            transition: transform 0.8s ease;
+            backdrop-filter: blur(10px);
+        }
+        .tile:hover {
+            transform:scale(1.5);
+            transition: 2s;
+            border: 1px solid #00FF7F;
+            box-shadow: 10px 7px 20px rgb(0, 0, 0);
+        }
+        .tile img {
+            max-width: 100%;
+            border-radius: 50px;
+	    }
+        .tile:hover img {
+            transition: 2s;
+            transform: scale(1.07);
+        }
+	    Ul{
+            font-family: arialblackitalic;
+            text-align: center;
+            font-size: 140%;
+            color: #59BFFF;
+            margin-left: -4vh;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        footer {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        iframe{
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+   </style>
+
+</head>
+
+
+<body>
+    <header>
+
+        <button class="back-button" onclick="goBack()"><i class="fas fa-arrow-left"></i></button>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+
+
+        <img src="Pictures/Cybersecurity_Logo.jpg" alt="Cybersecurity Logo">
+        <h1>Cybersecurity</h1>
+
+        <nav>
+            <a href="Home_Page.html" class="highlight"><i class="fas fa-home"></i> Home	</a>
+            <a href="Contact/Contact.html"><i class="fas fa-phone"></i> Contact	</a>
+            <a href="About/About.html"><i class="fas fa-info-circle"></i> About </a>
+        </nav>
+    </header>
+
+
+
+    <div class="container">
+
+        <a href="01_Mobile_Security/01_Mobile_Security.html" class="tile">
+            <img src="Pictures/Mobile_Security_Logo.jpg" alt="Image 1">
+            <ul>Mobile Security</ul>
+        </a>
+
+        <a href="02_Social_Meadia_Security/02_Social_Meadia_Security.html" class="tile">
+            <img src="Pictures/Social_Meadia_Security_Logo.jpg" alt="Image 2">
+            <ul>Social Meadia Security</ul>
+        </a>
+
+        <a href="03_Network_Security/03_Network_Security.html" class="tile">
+            <img src="Pictures/Network_Security_Logo.jpg" alt="Image 3">
+            <ul>Network Security</ul>
+        </a>
+
+        <a href="04_Email_Security/04_Email_Security.html" class="tile">
+            <img src="Pictures/Email_Security_Logo.jpg" alt="Image 4">
+            <ul>Email Security</ul>
+        </a>
+
+    </div>
+
+</body>
+
+
+<footer>
+    <iframe src="Footer/Footer.html"></iframe>
+</footer>
+
+
+</html>
